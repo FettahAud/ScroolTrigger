@@ -11,3 +11,4 @@ I hope it being useful for everyone
   
 ---
 ## Live Preview
+- [Pin](https://fettahaud.github.io/ScroolTrigger/Pin/index.html)
