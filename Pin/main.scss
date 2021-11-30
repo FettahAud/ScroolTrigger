@@ -1,0 +1,46 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	height: 100vh;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.cont {
+	width: 100%;
+	min-height: 100vh;
+	position: relative;
+	overflow: hidden;
+	.slide {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		display: grid;
+		place-items: center;
+		font-size: 5em;
+	}
+	.slide-1 {
+		background: #264653;
+		top: 0;
+	}
+	.slide-2 {
+		background-color: #2a9d8f;
+		// top: calc(100vh * 1);
+		// left: calc(-100vw * 1);
+	}
+	.slide-3 {
+		background-color: #e9c46a;
+		// top: calc(100vh * 1);
+		// left: calc(-100vw * 1);
+	}
+	.slide-4 {
+		background-color: #f4a261;
+		// top: calc(100vh * 1);
+		// left: calc(100vw * 1);
+	}
+	.slide-5 {
+		background-color: #e76f51;
+		// top: calc(100vh * 2);
+	}
+}

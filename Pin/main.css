@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cont {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.cont .slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: grid;
+  place-items: center;
+  font-size: 5em;
+}
+
+.cont .slide-1 {
+  background: #264653;
+  top: 0;
+}
+
+.cont .slide-2 {
+  background-color: #2a9d8f;
+}
+
+.cont .slide-3 {
+  background-color: #e9c46a;
+}
+
+.cont .slide-4 {
+  background-color: #f4a261;
+}
+
+.cont .slide-5 {
+  background-color: #e76f51;
+}
+/*# sourceMappingURL=main.css.map */
