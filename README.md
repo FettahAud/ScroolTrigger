@@ -13,4 +13,4 @@ I hope it being useful for everyone
 ## Live Preview
 - [Pin](https://fettahaud.github.io/ScroolTrigger/Pin/index.html)
 - [Masking & Scrolling](https://fettahaud.github.io/ScroolTrigger/Masking_&_Scroll/index.html)
-- [Split Image](https://fettahaud.github.io/ScroolTrigger/Split-Image/index.html)
+- [Split Image](https://fettahaud.github.io/ScroolTrigger/Split-img/index.html)
