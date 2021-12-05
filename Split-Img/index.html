@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split img</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>SCROLL DOWN TO SEE THE SVG MASK</h1>
+
+    <svg viewBox="0 0 100 100" id="piggies">
+        <mask id="myMask">
+            <rect class="rectangles" x="0" y="0" width="10%" height="100%" fill="white" />
+            <rect class="rectangles" x="9.5" y="0" width="10%" height="100%" fill="white" />
+            <rect class="rectangles" x="19" y="0" width="10%" height="100%" fill="white" />
+            <rect class="rectangles" x="28.5" y="0" width="10%" height="100%" fill="white" />
+            <rect class="rectangles" x="38" y="0" width="10%" height="100%" fill="white" />
+            <rect class="rectangles" x="47.5" y="0" width="10%" height="100%" fill="white" />
+            <rect class="rectangles" x="57" y="0" width="10%" height="100%" fill="white" />
+            <rect class="rectangles" x="66.5" y="0" width="10%" height="100%" fill="white" />
+            <rect class="rectangles" x="76" y="0" width="10%" height="100%" fill="white" />
+            <rect class="rectangles" x="85.5" y="0" width="10%" height="100%" fill="white" />
+            <rect class="rectangles" x="95" y="0" width="10%" height="100%" fill="white" />
+        </mask>
+        <image x="0" y="0" height="100%" width="100%" href="https://images.unsplash.com/photo-1508775688883-baed6b7faec1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&h=1000&q=80&crop=entropy" preserveAspectRatio="xMidYMid slice" mask="url(#myMask)" />
+    </svg>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js" integrity="sha512-CPA5LMoJI/a5HkSIAKcBtFXe4gqGjPUL2ExF/3PmhrrHI17wod9xOqqF+0WZQRKIIq0KwF8oG5BaiWobtrke3A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        // first test animation
+        gsap.from(".rectangles", {
+        	yPercent: 100,
+        	ease: "expo.easeInOut",
+        	duration: 2,
+        	stagger: {
+        		amount: 2,
+                start: 'bottom bottom'
+        	},
+        	scrollTrigger: "#piggies"
+        });
+    </script>
+</body>
+</html>
