@@ -1,0 +1,112 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Montserrat, sans-serif;
+}
+body {
+	height: 100vh;
+	scroll-behavior: smooth;
+}
+.container {
+	width: 100%;
+	height: 100%;
+	section {
+		height: 100vh;
+		position: relative;
+		overflow: hidden;
+		.images {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100vh;
+			// height: clamp(50vh, calc(37.3418vh + 50.6329vw), 100vh);
+			// height: clamp(50vh, calc(10rem + 30vw), 100vh);
+			img {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: auto;
+				object-fit: cover;
+				&:nth-of-type(1) {
+					z-index: 0;
+				}
+				&:nth-of-type(2) {
+					z-index: 1;
+				}
+				&:nth-of-type(3) {
+					z-index: 3;
+				}
+				&:nth-of-type(4) {
+					z-index: 4;
+				}
+			}
+		}
+		.title {
+			position: absolute;
+			z-index: 2;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: white;
+			font-size: clamp(4rem, calc(-1.9rem + 8vw), 8rem);
+			text-transform: uppercase;
+			user-select: none;
+		}
+		&:nth-of-type(1) {
+			&::before {
+				content: "";
+				z-index: 100;
+				position: absolute;
+				bottom: -50px;
+				left: 0;
+				width: 100%;
+				height: 100px;
+				background: linear-gradient(
+					180deg,
+					rgba(255, 255, 255, 0) 0%,
+					#334566 46.88%,
+					rgba(255, 255, 255, 0) 100%
+				);
+			}
+		}
+		&:nth-of-type(2) {
+			display: grid;
+			// responsive grid
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+			grid-template-rows: max-content;
+			gap: 2rem;
+			padding: 8rem 1rem;
+			background-color: #334566;
+			place-items: center;
+			.box {
+				background: #cedced;
+				border-radius: 0.5rem;
+				box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+				padding: 2rem;
+				h3 {
+					font-size: clamp(
+						1rem,
+						calc(-1.9rem + 8vw),
+						1.7rem
+					);
+					text-transform: uppercase;
+					font-weight: 700;
+					margin-bottom: 1rem;
+				}
+				p {
+					font-size: clamp(
+						0.8rem,
+						calc(-2.9rem + 5vw),
+						1.6rem
+					);
+					line-height: 1.5;
+					margin-bottom: 1rem;
+				}
+			}
+		}
+	}
+}
