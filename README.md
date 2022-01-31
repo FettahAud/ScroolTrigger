@@ -14,6 +14,7 @@ I hope it being useful for everyone
   - [gsap.utils](https://greensock.com/docs/v3/GSAP/gsap.utils)
 - [GSAP Codepen](https://codepen.io/GreenSock)
   - [Simple parallax sections - ScrollTrigger](https://codepen.io/GreenSock/pen/QWjjYEw?editors=0100)
+- [GSAP Parallax&Change Color](https://codepen.io/Web_yuki1027/pen/BajYPRj?editors=0010)
   
   
 ## Live Preview
@@ -22,3 +23,4 @@ I hope it being useful for everyone
 - [Split Image](https://fettahaud.github.io/ScroolTrigger/Split-Img/index.html)
 - [Parallax-template-01](https://fettahaud.github.io/ScroolTrigger/Parallax/Template-01/index.html)
 - [Parallax-template-02](https://fettahaud.github.io/ScroolTrigger/Parallax/Template-02/index.html)
+- [Parallax-content](https://fettahaud.github.io/ScroolTrigger/Parallax content/Project-01/index.html)
