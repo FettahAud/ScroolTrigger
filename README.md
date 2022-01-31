@@ -23,4 +23,4 @@ I hope it being useful for everyone
 - [Split Image](https://fettahaud.github.io/ScroolTrigger/Split-Img/index.html)
 - [Parallax-template-01](https://fettahaud.github.io/ScroolTrigger/Parallax/Template-01/index.html)
 - [Parallax-template-02](https://fettahaud.github.io/ScroolTrigger/Parallax/Template-02/index.html)
-- [Parallax-content](https://fettahaud.github.io/ScroolTrigger/Parallax content/Project-01/index.html)
+- [Parallax-content](https://fettahaud.github.io/ScroolTrigger/Parallax%20content/Project-01/index.html)
